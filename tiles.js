@@ -2,7 +2,7 @@ angular.module('applicationTiles', [])
     .controller('applicationTilesController', ['$scope', function ($scope) {
         $scope.today = new Date();
     }])
-    .directive('numericTile', ['SplitPaneState', function (NumericTilePaneState) {
+    .directive('atNumericTile', ['SplitPaneState', function (NumericTilePaneState) {
         return {
             restrict: 'E',
             replace: true,
@@ -10,7 +10,7 @@ angular.module('applicationTiles', [])
             scope: {
                 perspective: '@',
                 title: '@',
-                numericData: '@'
+                numericData: '<'
             },
             controller: ['$scope', '$element', function ($scope, $element) {
                 $scope.today = new Date();
