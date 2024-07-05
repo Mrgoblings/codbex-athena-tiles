@@ -98,6 +98,12 @@ Here is an example of how to integrate and use the `NumericTile` directive in yo
     }]);
     ```
 
+## Process Flow
+
+The following diagram illustrates the process flow for submitting and processing an expense:
+![image](https://github.com/Mrgoblings/codbex-athena-tiles/assets/80454439/1582e5df-ee4c-466e-a626-c18c2a83f118)
+
+
 ## References
 
 The design and functionality of these tiles are based on the examples from the Hestia project, specifically the dashboard file located at [Hestia Dashboard](https://github.com/codbex/codbex-hestia/blob/main/codbex-hestia/subviews/dashboard.html).
