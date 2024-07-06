@@ -23,7 +23,7 @@
       <bpmndi:BPMNShape bpmnElement="sid-B43DB1D7-D75E-438E-AA33-B712AAE7CB34" id="BPMNShape_sid-B43DB1D7-D75E-438E-AA33-B712AAE7CB34">
         <omgdc:Bounds height="28.0" width="28.0" x="430.0" y="113.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge bpmnElement="sid-A97D8DC6-F13F-4E73-8CC1-6189F727BDA2" id="BPMNEdge_sid-A97D8DC6-F13F-4E73-8CC1-6189F727BDA2" flowable:sourceDockerX="50.0" flowable:sourceDockerY="40.0" flowable:targetDockerX="1.0" flowable:targetDockerY="40.0">
+      <bpmndi:BPMNEdge bpmnElement="sid-A97D8DC6-F13F-4E73-8CC1-6189F727BDA2" id="BPMNEdge_sid-A97D8DC6-F13F-4E73-8CC1-6189F727BDA2" flowable:sourceDockerX="50.0" flowable:sourceDockerY="40.0" flowable:targetDockerX="50.0" flowable:targetDockerY="40.0">
         <omgdi:waypoint x="238.95000000000002" y="127.0"/>
         <omgdi:waypoint x="285.0" y="127.0"/>
       </bpmndi:BPMNEdge>
