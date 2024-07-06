@@ -8,7 +8,8 @@ angular.module('applicationTiles', [])
                 title: '@',
                 subtitle: '@?',
                 numericData: '=',
-                footerText: '@?'
+                footerText: '@?',
+                isFloatingNumber: '<?'
             },
             controller: ['$scope', function ($scope) {
                 if (!$scope.footerText) {
