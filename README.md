@@ -66,7 +66,7 @@ To use the `NumericTile` directive in your application, follow these steps:
 
 3. Use the `NumericTile` directive in your HTML:
     ```html
-    <numeric-tile numeric-data="yourNumericData"></numeric-tile>
+    <numeric-tile title="Your Title" numeric-data="yourNumericData"></numeric-tile>
     ```
 
 ## Example
@@ -84,19 +84,25 @@ Here is an example of how to integrate and use the `NumericTile` directive in yo
     </head>
     <body>
         <div ng-controller="MainController">
-            <numeric-tile numeric-data="yourNumericData"></numeric-tile>
+            <at-numeric-tile title="Product Count" numeric-data="3" perspective="">
+            </at-numeric-tile>
+
+            <at-numeric-tile title="Product Price" numeric-data="7" perspective="" subtitle="last month"
+                footer-text="BGN">
+            </at-numeric-tile>
         </div>
     </body>
     </html>
     ```
 
-2. Define your AngularJS application and controller in `app.js`:
+2. Define your AngularJS application and add athenaTiles as a dependancy in `app.js`:
     ```javascript
     angular.module('yourApp', ['athenaTiles'])
-    .controller('MainController', ['$scope', function($scope) {
-        $scope.yourNumericData = 42;
-    }]);
     ```
+
+    ### The result should look something like this:
+    <img width="256" alt="image" src="https://github.com/Mrgoblings/codbex-athena-tiles/assets/80454439/cd117773-068c-41c0-a3cb-7d1d669b6330">
+
 
 ## Process Flow
 
@@ -106,17 +112,8 @@ The following diagram illustrates the process flow for submitting and processing
 
 ## References
 
-The design and functionality of these tiles are based on the examples from the Hestia project, specifically the dashboard file located at [Hestia Dashboard](https://github.com/codbex/codbex-hestia/blob/main/codbex-hestia/subviews/dashboard.html).
+The design and functionality of these tiles are based on the examples from the Hestia project, specifically the dashboard file located at [Hestia Dashboard](https://github.com/codbex/codbex-hestia-dashboard/blob/main/codbex-hestia/subviews/dashboard.html).
 
-## Contribution
-
-If you would like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with descriptive messages.
-4. Push your changes to your forked repository.
-5. Create a pull request with a detailed description of your changes.
 
 ## License
 
