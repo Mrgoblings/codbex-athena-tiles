@@ -88,7 +88,7 @@ Here is an example of how to integrate and use the `NumericTile` directive in yo
             </at-numeric-tile>
 
             <at-numeric-tile title="Product Price" numeric-data="7" perspective="" subtitle="last month"
-                footer-text="BGN">
+                footer-text="BGN" is-floating-number="true">
             </at-numeric-tile>
         </div>
     </body>
@@ -101,7 +101,8 @@ Here is an example of how to integrate and use the `NumericTile` directive in yo
     ```
 
     ### The result should look something like this:
-    <img width="256" alt="image" src="https://github.com/Mrgoblings/codbex-athena-tiles/assets/80454439/cd117773-068c-41c0-a3cb-7d1d669b6330">
+    <img width="229" alt="image" src="https://github.com/Mrgoblings/codbex-athena-tiles/assets/80454439/26abad73-6b5d-44f7-a3a5-528d1a86faaf">
+
 
 
 ## Process Flow
