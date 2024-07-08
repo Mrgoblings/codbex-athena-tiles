@@ -6,14 +6,15 @@ The `NumericTile` directive displays a numeric value with customizable styling. 
 
 ## Attributes
 
-| Attribute         | Type            | Description                                                             | Example Usage               |
-|-------------------|-----------------|-------------------------------------------------------------------------|-----------------------------|
-| `perspective`     | String          | Specifies the perspective related to the tile.                           | `perspective="'somePerspective'"` |
-| `title`           | String          | Sets the main title of the numeric tile.                                 | `title="'Numeric Tile Example'"` |
-| `subtitle`        | String (optional)| Provides an optional subtitle for the numeric tile.                       | `subtitle="'Optional Subtitle'"` |
-| `numericData`     | Number          | Binds the numeric data to be displayed in the tile.                       | `numeric-data="3"`          |
-| `footerText`      | String (optional)| Sets the text to display in the footer of the tile.                       | `footer-text="'Optional footer text'"` |
-| `isFloatingNumber`| Boolean (optional)| Determines if the numeric data should be displayed as a floating point number. | `is-floating-number="true"` |
+| Attribute         | Type              | Description                                                                    | Example Usage                          |
+|-------------------|-------------------|--------------------------------------------------------------------------------|----------------------------------------|
+| `perspective`     | String            | Specifies the perspective related to the tile.                                 | `perspective="somePerspective"`        |
+| `title`           | String            | Sets the main title of the numeric tile.                                       | `title="Numeric Tile Example"`         |
+| `subtitle`        | String (optional) | Provides an optional subtitle for the numeric tile.                            | `subtitle="Optional Subtitle"`         |
+| `numericData`     | Number            | Binds the numeric data to be displayed in the tile.                            | `numeric-data="3"`                     |
+| `footerText`      | String (optional) | Sets the text to display in the footer of the tile.                            | `footer-text="Optional footer text"`   |
+| `isFloatingNumber`| Boolean (optional)| Determines if the numeric data should be displayed as a floating point number. | `is-floating-number="true"`            |
+| `tail`            | String (optional) | Specifies a suffix to be appended to the numeric data.                         | `tail="%"`                             |
 
 ## Example
 
@@ -34,8 +35,8 @@ Here is an example of how to integrate and use the `NumericTile` directive in yo
             <at-numeric-tile title="Product Count" numeric-data="3" perspective="">
             </at-numeric-tile>
 
-            <at-numeric-tile title="Product Price" numeric-data="7" perspective="" subtitle="last month"
-                footer-text="BGN" is-floating-number="true">
+            <at-numeric-tile title="Product Price" numeric-data="79" perspective="" subtitle="last month"
+                footer-text="BGN" is-floating-number="true" tail="%">
             </at-numeric-tile>
         </div>
     </body>
@@ -48,6 +49,6 @@ Here is an example of how to integrate and use the `NumericTile` directive in yo
     angular.module('yourApp', ['athenaTiles'])
     ```
 
-    ### The result should look something like this:
-    ![Example Image](https://github.com/Mrgoblings/codbex-athena-tiles/assets/80454439/26abad73-6b5d-44f7-a3a5-528d1a86faaf)
+### The result should look something like this:
+![Example Image](https://github.com/Mrgoblings/codbex-athena-tiles/assets/80454439/26abad73-6b5d-44f7-a3a5-528d1a86faaf)
 

@@ -1,22 +1,23 @@
 angular.module('applicationTiles', [])
-    .directive('atNumericTile', ['SplitPaneState', function () {
+    .directive('atNumericTile', function () {
         return {
             restrict: 'E',
             transclude: false,
+            replace: true,
             scope: {
                 perspective: '@',
                 title: '@',
                 subtitle: '@?',
                 numericData: '<',
                 footerText: '@?',
-                isFloatingNumber: '<?'
+                isFloatingNumber: '<?',
+                tail: '@?'
             },
-            controller: ['$scope', function ($scope) {
-                if (!$scope.footerText) {
-                    $scope.today = new Date();
+            link: function (scope) {
+                if (!scope.footerText) {
+                    scope.today = new Date();
                 }
-            }],
+            },
             templateUrl: "/services/web/codbex-athena-tiles/tiling/templates/numericTile.html"
         };
-    }]);
-
+    });
