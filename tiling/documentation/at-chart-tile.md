@@ -48,4 +48,4 @@ Here is an example of how to integrate and use the `ChartTile` directive in your
     ```
 
 ### The result should look something like this:
-![Example Image](https://example.com/path/to/example-image.png)
+![image](https://github.com/user-attachments/assets/12d94132-b178-4f37-b290-42d6dd61edd7)
