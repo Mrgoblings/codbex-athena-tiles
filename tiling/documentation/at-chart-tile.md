@@ -5,7 +5,7 @@
 The `ChartTile` directive displays data in a doughnut chart format using Chart.js. It is designed to visualize data sets with customizable styling and options.
 
 ## Attributes
-
+| Attribute         | Type              | Description                                                                    | Example Usage                          |
 |-------------|----------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | `perspective`| String        | Specifies the perspective related to the tile.                                                 | `perspective="somePerspective"`                            |
 | `title`      | String        | Sets the main title of the chart tile.                                                         | `title="Sales Distribution"`                               |
