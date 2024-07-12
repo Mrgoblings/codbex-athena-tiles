@@ -10,4 +10,8 @@ Welcome to the documentation for Athena Generic Tiles.
 
 - [NumericTile Documentation](at-numeric-tile.md): Displays a numeric value with customizable styling.
 
-### 2. NextTile
+### 2. ChartTile
+
+
+
+- [ChartTile Documentation](at-chart-tile.md): Displays a chart with customizable styling.

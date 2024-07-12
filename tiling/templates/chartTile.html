@@ -1,0 +1,31 @@
+<div class="fd-row" style="margin: 0.5em">
+    <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--6 fd-col-xl--6">
+        <fd-card card-type="table">
+            <fd-card-header ng-click="openPerspective(perspective)">
+                <fd-card-title>{{ title }}</fd-card-title>
+            </fd-card-header>
+            <fd-card-content>
+                <table fd-table inner-borders="horizontal" outer-borders="none" style="min-height:12.5rem">
+                    <tbody fd-table-body>
+                        <tr fd-table-row>
+                            <td fd-table-cell class="fd-padding--none" width="50%">
+                                <fd-list>
+                                    <fd-list-item ng-repeat="(key, value) in data">
+                                        <div class="dg-hbox dg-full-width">
+                                            <span style="flex:1">{{ key }}</span>
+                                            <span>{{ value }}</span>
+                                        </div>
+                                    </fd-list-item>
+                                </fd-list>
+                            </td>
+                            <td fd-table-cell width="50%">
+                                <!-- Right section for doughnut chart -->
+                                <canvas id="doughnutChart" width="200" height="200"></canvas>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fd-card-content>
+        </fd-card>
+    </div>
+</div>
