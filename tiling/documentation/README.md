@@ -12,6 +12,6 @@ Welcome to the documentation for Athena Generic Tiles.
 
 ### 2. ChartTile
 
-
+![image](https://github.com/user-attachments/assets/12d94132-b178-4f37-b290-42d6dd61edd7)
 
 - [ChartTile Documentation](at-chart-tile.md): Displays a chart with customizable styling.
