@@ -5,12 +5,12 @@
 The `ChartTile` directive displays data in a doughnut chart format using Chart.js. It is designed to visualize data sets with customizable styling and options.
 
 ## Attributes
-| Attribute         | Type              | Description                                                                    | Example Usage                          |
+| Attribute   | Type           | Description                                                                                    | Example Usage                                             |
 |-------------|----------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | `perspective`| String        | Specifies the perspective related to the tile.                                                 | `perspective="somePerspective"`                            |
 | `title`      | String        | Sets the main title of the chart tile.                                                         | `title="Sales Distribution"`                               |
 | `data`       | Object        | Binds the data to be displayed in the left section of the tile.                                | `data="{ 'Category': 'Electronics', 'Total Sales': 250 }"` |
-| `datasets`   | Array         | Binds the datasets for the doughnut chart. Each dataset includes `data` and `backgroundColor`. | `datasets="chartData.datasets"`                            |
+| `datasets`   | Array         | Binds the datasets for the doughnut chart. Each dataset includes `data` and `backgroundColor`. | `datasets="[ { data: [300, 50, 100], backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'] } ]"`                            |
 | `labels`     | Array         | Sets the labels for the segments of the doughnut chart.                                        | `labels="['Red', 'Blue', 'Yellow']"`                       |
 
 ## Example
@@ -33,7 +33,7 @@ Here is an example of how to integrate and use the `ChartTile` directive in your
             <at-chart-tile title="Sales Distribution"
                            perspective="products"
                            data="{ 'Category': 'Electronics', 'Total Sales': 250 }"
-                           datasets="chartData.datasets"
+                           datasets="[ { data: [300, 50, 100], backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'] } ]"
                            labels="['Electronics', 'Books', 'Clothing']">
             </at-chart-tile>
         </div>
